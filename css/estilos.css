@@ -1,7 +1,45 @@
-h1{
-    color: #4D0900;
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(./../imagenes/fondo2.png);
+    background-size: contain;
 }
 
-h2{
-    color: #BD5F53;
+#indice-interfaces{
+    font-size: 16pt;
 }
+
+.cabecera{
+    border-style: groove;
+    background-color: #720000;
+    color: white;
+    padding: 15px;
+}
+
+.cuerpo{
+    padding-left: 25px;
+}
+
+.cuerpo h2{
+    padding: 15px;
+    background-color: #BB3434;
+    color: white;
+}
+
+.subt {
+    font-size: 14pt;
+    padding: 15px;
+    margin-top: 50px;
+    margin-right: 1600px;
+    background: rgb(49,2,71);
+    background: linear-gradient(90deg, rgba(49,2,71,1) 0%, rgba(83,13,117,0.9051821412158614) 45%, rgba(255,255,255,1) 100%); 
+    color: white;
+    border-radius: 25px;
+}
+
+.footer{
+    font-size: 18pt;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
