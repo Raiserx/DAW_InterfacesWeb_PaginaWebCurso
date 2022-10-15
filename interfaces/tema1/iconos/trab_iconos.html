@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iconos en Material (I)</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+
+    <!-- Mi estructura es un header y muchos divs de tipo cuerpo que funcionarían como separadores entre distintos puntos -->
+    <!-- Cada div del cuerpo tendrá un h2, párrafos, sectores de código, y tablas donde se muestran ejemplos -->
+
+    <div id="header">
+        <h1>
+            <span class="material-icons md-72 md-dark-dos">menu_book</span>
+            Guia de Iconos en Material
+        </h1>
+    </div>
+
+    <!--Cuerpo 1-->
+    <div class="cuerpo">
+        <h2>¿Qué son los íconos de material?</h2>
+
+        <p>Los íconos del sistema de Material Design son simples, modernos, amigables y, a veces, peculiares. Cada ícono
+            se crea siguiendo nuestros lineamientos de diseño para representar de formas simples y mínimas los conceptos
+            universales que se usan comúnmente en toda una IU. Para garantizar una legibilidad y claridad en tamaños
+            grandes y pequeños, estos íconos se optimizaron a fin de lograr una visualización atractiva en todas las
+            plataformas y resoluciones de pantalla comunes</p>
+
+        <p>Consulta el conjunto completo de íconos de material design en la <a
+                href="https://fonts.google.com/icons">biblioteca de íconos de material</a>.</p>
+    </div>
+
+    <!--Cuerpo 2-->
+    <div class="cuerpo">
+        <h2>Obteniendo Iconos</h2>
+
+        <p>
+            Los íconos están disponibles en varios formatos y son adecuados para diferentes tipos de proyectos y
+            plataformas, así como para los desarrolladores de sus apps y los diseñadores de sus modelos o prototipos
+        </p>
+
+
+    </div>
+
+    <!--Cuerpo 3-->
+    <div class="cuerpo">
+
+        <h2>Método de configuración mediante Google Fonts</h2>
+
+        <p>
+            La forma más sencilla de configurar las fuentes de íconos para usarlas en cualquier página web es mediante
+            <a href="https://developers.google.com/fonts/docs/getting_started">Google Fonts</a>. Lo único que debes
+            hacer es incluir una sola línea de HTML
+        </p>
+
+        <p>
+            <!--Aquí ponemos la etiqueta code, semántica, pero además necesitamos usar las expresiones &lt; para que el código se escriba de manera literal-->
+            <code class="codigo">
+                &lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+                rel="stylesheet"&gt;      
+            </code>
+        </p>
+
+        <p>
+            Al igual que otras fuentes web de Google, se publicará el CSS correcto para activar la fuente específica del
+            navegador. Se declarará una clase de CSS adicional llamada .material-icons. Cualquier elemento que use esta
+            clase tendrá el CSS correcto para renderizar estos íconos desde la fuente web.
+        </p>
+
+    </div>
+
+    <!--Cuerpo 4-->
+    <div class="cuerpo">
+
+        <h2>Cómo usar los iconos en HTML</h2>
+
+        <p>
+            Es muy fácil incorporar íconos a tu página web. Este es un ejemplo pequeño:
+        </p>
+
+        <p>
+            <code class="codigo">
+                &lt;span class="material-icons"&gt;face&lt;/span&gt;
+            </code>
+
+            <span class="material-icons iconos-muestra">face</span>
+
+        </p>
+
+        <p>
+            En este ejemplo, se usa una función tipográfica llamada <a
+                href="http://alistapart.com/article/the-era-of-symbol-fonts">ligaduras</a>, que permite renderizar un
+            glifo de ícono mediante su nombre textual. El navegador web realiza el reemplazo de forma automática y
+            proporciona un código más legible que la referencia equivalente de caracteres numéricos.
+        </p>
+
+        <p>
+            Para los navegadores que no admiten ligaduras, recurre a la especificación de íconos mediante referencias
+            numéricas de caracteres, como en el siguiente ejemplo:
+        </p>
+
+        <div>
+            <!--Me ayudo de tablas para hacer la exposición entre iconos y su código-->
+            <table class="tablas-icono-codigo">
+                <tr>
+                    <td>
+                        <span class="material-icons">&#xE87C;</span> <br>
+                        Normal
+                    </td>
+                    <td>
+                        <code class="codigo">&lt;span class="material-icons"&gt;&amp;#xE87C;&lt;/span&gt;</code>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <p>
+            Selecciona los íconos y abre el panel de fuentes de íconos para buscar los nombres de los íconos y los
+            puntos de código en la <a href="https://fonts.google.com/icons/">biblioteca de íconos de material</a>. Cada
+            fuente de íconos tiene un índice de puntos de código en nuestro repositorio de Git que muestra el conjunto
+            completo de nombres y códigos de caracteres (<a
+                href="https://github.com/google/material-design-icons/tree/master/font">aquí</a>).
+        </p>
+
+    </div>
+
+    <!--Cuerpo 5-->
+    <div class="cuerpo">
+
+        <h2>Cómo dar estilo a los íconos en Material Design</h2>
+
+        <p>
+            Estos íconos se diseñaron para cumplir con los <a
+                href="https://www.google.com/design/spec/iconography">lineamientos de material design</a>, y se ven
+            mejor cuando se usan los tamaños y colores de íconos recomendados. Los siguientes estilos facilitan la
+            aplicación de nuestros tamaños, colores y estados de actividad recomendados.
+        </p>
+
+        <p>
+            <code>
+                <div class="codigo">
+                    
+                    <span class="color-prim">/* Rules for sizing the icon. */</span> <br>
+                    .material-icons.md-18 { <span class="color-sec">font-size</span>: 18px; } <br>
+                    .material-icons.md-24 { <span class="color-sec">font-size</span>: 24px; } <br>
+                    .material-icons.md-36 { <span class="color-sec">font-size</span>: 36px; } <br>
+                    .material-icons.md-48 { <span class="color-sec">font-size</span>: 48px; } <br>
+                    <br>
+                    <span class="color-prim">/* Rules for using icons as black on a light background. */</span> <br>
+                    .material-icons.md-dark { <span class="color-sec">color</span>: rgba(0, 0, 0, 0.54); } <br>
+                    .material-icons.md-dark.md-inactive { <span class="color-sec">color</span>: rgba(0, 0, 0, 0.26); } <br>
+                    <br>
+                    <span class="color-prim">/* Rules for using icons as white on a dark background. */</span> <br>
+                    .material-icons.md-light { <span class="color-sec">color</span>: rgba(255, 255, 255, 1); } <br>
+                    .material-icons.md-light.md-inactive { <span class="color-sec">color</span>: rgba(255, 255, 255, 0.3); } <br>
+                </div>
+            </code>
+        </p>
+
+    </div>
+
+    <!--Cuerpo 6-->
+    <div class="cuerpo">
+
+        <h2>Dimensionamiento</h2>
+
+        <p>
+            Aunque los íconos de la fuente se pueden ajustar a cualquier tamaño, de acuerdo con los <a
+                href="https://www.google.com/design/spec/iconography/system-icons.html">lineamientos de íconos de
+                material design</a>, recomendamos que se muestren en 18, 24, 36 o 48 píxeles. El tamaño predeterminado
+            es de 24 px
+        </p>
+
+        <p>
+            Reglas de CSS para los lineamientos de tamaño estándar de Material Design:
+        </p>
+
+        <p>
+            <code>
+                <div class="codigo">
+
+                    .material-icons.md-18 { <span class="color-sec">font-size</span>: 18px; } <br>
+                    .material-icons.md-24 { <span class="color-sec">font-size</span>: 24px; } <br>
+                    .material-icons.md-36 { <span class="color-sec">font-size</span>: 36px; } <br>
+                    .material-icons.md-48 { <span class="color-sec">font-size</span>: 48px; } <br>
+
+                </div>
+            </code>
+        </p>
+
+        <p>
+            Los íconos de material se ven mejor en 24 px, pero si un ícono debe mostrarse en un tamaño alternativo, usar
+            las reglas de CSS anteriores puede ser útil:
+        </p>
+
+        <div>
+            <table class="tablas-icono-codigo">
+                <tr>
+                    <td>
+                        <span class="material-icons md-18">face</span>
+                        <br>
+                        <span class="md-18">18px</span>
+                    </td>
+                    <td>
+                        <code class="codigo">&lt;span class="material-icons md-18"&gt;face&lt;/span&gt;</code>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <span class="material-icons md-24">face</span>
+                        <br>
+                        <span class="md-24">24px</span>
+                    </td>
+                    <td>
+                        <code class="codigo">&lt;span class="material-icons md-24"&gt;face&lt;/span&gt;</code>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <span class="material-icons md-36">face</span>
+                        <br>
+                        <span class="md-36">36px</span>
+                    </td>
+                    <td>
+                        <code class="codigo">&lt;span class="material-icons md-36"&gt;face&lt;/span&gt;</code>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <span class="material-icons md-48">face</span>
+                        <br>
+                        <span class="md-48">48px</span>
+                    </td>
+                    <td>
+                        <code class="codigo">&lt;span class="material-icons md-48"&gt;face&lt;/span&gt;</code>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <!--Cuerpo 6-->
+    <div class="cuerpo">
+
+        <h2>Colorear</h2>
+
+        <p>
+            La fuente del ícono permite darle estilo fácilmente a un ícono de cualquier color. Según los <a
+                href="https://www.google.com/design/spec/iconography/system-icons.html#color">lineamientos para íconos
+                de material design</a>, te recomendamos que uses íconos negros con una opacidad del 54% o blancos con
+            una opacidad del 100% cuando uses estos íconos en fondos claros u oscuros, respectivamente. Si los íconos
+            están inhabilitados o inactivos, usa negro al 26% o blanco al 30% para fondos claros y oscuros,
+            respectivamente.
+        </p>
+
+        <p>
+            A continuación, se incluyen algunos ejemplos en los que se usan los estilos de CSS de material descritos con
+            anterioridad:
+        </p>
+
+        <p>
+            <code>
+                <div class="codigo">
+
+                    .material-icons.md-dark { <span class="color-sec">color</span>: rgba(0, 0, 0, 0.54); } <br>
+                    .material-icons.md-dark.md-inactive { <span class="color-sec">color</span>: rgba(0, 0, 0, 0.26); } <br>
+                    
+                    .material-icons.md-light { <span class="color-sec">color</span>: rgba(255, 255, 255, 1); } <br>
+                    .material-icons.md-light.md-inactive { <span class="color-sec">color</span>: rgba(255, 255, 255, 0.3); } <br>
+
+                </div>
+            </code>
+        </p>
+
+        <p>
+            Ejemplo para dibujar un ícono sobre un fondo claro con un color oscuro de primer plano:
+        </p>
+
+        <div>
+            <table class="tablas-icono-codigo">
+                <tr>
+                    <td>
+                        <span class="material-icons md-dark">face</span>
+                        <br>
+                        Normal
+                    </td>
+                    <td>
+                        <code class="codigo">&lt;span class="material-icons md-dark"&gt;face&lt;/span&gt;</code>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <span class="material-icons md-dark md-inactive">face</span>
+                        <br>
+                        Inhabilitada
+                    </td>
+                    <td>
+                        <code
+                            class="codigo">&lt;span class="material-icons md-dark md-inactive"&gt;face&lt;/span&gt;</code>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+        <p>
+            Ejemplo para dibujar un ícono sobre un fondo oscuro con un color de primer plano claro:
+        </p>
+
+        <div>
+            <table class="tablas-icono-codigo">
+                <tr>
+                    <td class="background-negro">
+                        <span class="material-icons md-light">face</span>
+                        <br>
+                        Normal
+                    </td>
+                    <td>
+                        <code class="codigo">&lt;span class="material-icons md-light"&gt;face&lt;/span&gt;</code>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="background-negro">
+                        <span class="material-icons md-light md-inactive">face</span>
+                        <br>
+                        Inhabilitada
+                    </td>
+                    <td>
+                        <code
+                            class="codigo">&lt;span class="material-icons md-light md-inactive"&gt;face&lt;/span&gt;</code>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+        <p>
+            Para establecer un color de ícono personalizado, define una regla de CSS que especifique el color deseado
+            para la fuente:
+        </p>
+
+        <p>
+            <code>
+                <div class="codigo">
+
+                    .material-icons.color-sec { <span class="color-sec">color</span>: #540D75; } <br>
+
+                </div>
+            </code>
+        </p>
+
+        <p>
+            Luego, usa la clase para referirte al ícono:
+        </p>
+
+        <div>
+            <table class="tablas-icono-codigo">
+                <tr>
+                    <td>
+                        <span class="material-icons color-sec">face</span>
+                        <br>
+                        Normal
+                    </td>
+                    <td>
+                        <code class="codigo">&lt;span class="material-icons color-sec"&gt;face&lt;/span&gt;</code>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+    </div>
+
+    <!--Cuerpo 7-->
+    <div class="cuerpo">
+
+        <h2>Iconos en SVG</h2>
+
+        <p>
+            Los íconos de material se proporcionan como SVG adecuados para proyectos web. Los íconos individuales se
+            pueden descargar desde la <a href="https://fonts.google.com/icons/">biblioteca de íconos de material</a>.
+            Los SVG también están disponibles en los íconos de material design del <a
+                href="https://github.com/google/material-design-icons/">repositorio de Git</a> en la ruta:
+        </p>
+
+        <p>
+            <code>
+                <div class="codigo">
+
+                    material-design-icons/src/ <br>
+
+                </div>
+            </code>
+        </p>
+
+        <p>
+            Por ejemplo, los íconos de mapa están en <a
+                href="https://github.com/google/material-design-icons/tree/master/src/maps">src/maps</a>:
+        </p>
+
+        <p>
+            <code>
+                <div class="codigo">
+
+                    material-design-icons/src/maps/ <br>
+
+                </div>
+            </code>
+        </p>
+
+        <p>
+            Si se usan varios íconos en un sitio web, se recomienda crear hojas de objetos con las imágenes. Para
+            obtener más información, consulta la documentación en el directorio de objetos del repositorio de git.
+        </p>
+
+    </div>
+
+    <!--Cuerpo 8-->
+    <div class="cuerpo">
+
+        <h2>Iconos en PNG</h2>
+
+        <p>
+            PNG es la forma más tradicional de mostrar íconos en la Web. Nuestras descargas de la <a
+                href="https://fonts.google.com/icons/">biblioteca de íconos de material</a> proporcionan densidades de
+            uno y dobles para cada ícono. Se denominan 1x y 2x, respectivamente en la descarga. Los íconos también están
+            disponibles en el repositorio de Git en:
+        </p>
+
+        <p>
+            <code>
+                <div class="codigo">
+
+                    material-design-icons/png/ <br>
+
+                </div>
+            </code>
+        </p>
+
+        <p>
+            Si se usan varios íconos en un sitio web, se recomienda crear hojas de objetos con las imágenes. Para
+            obtener más información, consulta las recomendaciones en el <a
+                href="https://github.com/google/material-design-icons/tree/master/sprites">directorio de objetos del
+                repositorio de git</a>.
+        </p>
+
+    </div>
+
+    <!--Cuerpo 9-->
+    <div class="cuerpo">
+
+        <h2>Método de configuración 2. Hosting propio</h2>
+
+        <p>
+            <a href="trab_iconos_descargados.html" target="_blank">Pincha aquí para consultar</a>
+        </p>
+
+    </div>
+    <!--Cuerpo 10-->
+    <div class="cuerpo">
+
+        <h2>Iconos de Font Awesome 5 con w3cschools</h2>
+
+        <p>
+            Para usar los íconos gratuitos de Font Awesome 5, vaya a <a
+                href="https://fontawesome.com/">fontawesome.com</a> e inicie sesión para obtener un código para usar en
+            sus páginas web.
+        </p>
+
+        <p>
+            Lea más acerca de cómo comenzar con Font Awesome en nuestro capítulo <a
+                href="https://www.w3schools.com/icons/fontawesome5_intro.asp">Font Awesome 5</a>.
+        </p>
+
+        <p>
+            <strong>Nota:</strong> ¡No se requiere descarga ni instalación!
+        </p>
+
+        <h3>Ejemplo</h3>
+
+        <p>
+            <code>
+                <div class="codigo">
+
+                    &lt;!DOCTYPE html&gt; <br>
+                    &nbsp&lt;html&gt; <br>
+                    &nbsp&nbsp&lt;head&gt; <br>
+                    &nbsp&nbsp&nbsp&lt;script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"&gt;&lt;/script&gt; <br>
+                    <!--Get your code at fontawesome.com-->
+                    &nbsp&nbsp&lt;/head&gt; <br>
+                    &nbsp&nbsp&lt;body&gt; <br>             
+                    &nbsp&nbsp&nbsp&lt;i class="fas fa-band-aid"&gt;&lt;/i&gt;<br>
+                    &nbsp&nbsp&nbsp&lt;i class="fas fa-cat"&gt;&lt;/i&gt;<br>
+                    &nbsp&nbsp&nbsp&lt;i class="fas fa-dragon"&gt;&lt;/i&gt;<br>
+                    &nbsp&nbsp&nbsp&lt;i class="far fa-clock"&gt;&lt;/i&gt;<br>
+                    &nbsp&nbsp&nbsp&lt;i class="fas fa-clock"&gt;&lt;/i&gt;<br>           
+                    &nbsp&nbsp&lt;/body&gt;<br>
+                    &nbsp&lt;/html&gt;<br>
+
+                </div>
+            </code>
+        </p>
+
+    </div>
+
+    <div class="cuerpo">
+
+        <h2>Font Awesome 4</h2>
+
+        <p>
+            Para usar los íconos de Font Awesome 4, agregue la siguiente línea dentro del <code>&lt;head&gt;</code> de su página HTML:
+        </p>
+
+        <p>
+            <strong>Nota:</strong> ¡No se requiere descarga ni instalación!
+        </p>
+
+        <h3>Ejemplo</h3>
+
+        <code>
+            <div class="codigo">
+                &lt;!DOCTYPE html&gt; <br>
+                &nbsp;&lt;html&gt; <br>
+                &nbsp;&nbsp;&lt;head&gt; <br>
+                &nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt; <br>
+                &nbsp;&nbsp;&lt;/head&gt; <br>
+                &nbsp;&nbsp;&lt;body&gt; <br>
+            
+                &nbsp;&nbsp;&nbsp;&lt;i class="fa fa-cloud"&gt;&lt;/i&gt; <br>
+                &nbsp;&nbsp;&nbsp;&lt;i class="fa fa-heart"&gt;&lt;/i&gt; <br>
+                &nbsp;&nbsp;&nbsp;&lt;i class="fa fa-car"&gt;&lt;/i&gt; <br>
+                &nbsp;&nbsp;&nbsp;&lt;i class="fa fa-file"&gt;&lt;/i&gt; <br>
+                &nbsp;&nbsp;&nbsp;&lt;i class="fa fa-bars"&gt;&lt;/i&gt; <br>
+            
+                &nbsp;&nbsp;&lt;/body&gt; <br>
+                &nbsp;&lt;/html&gt;
+            </div>
+        </code>
+
+    </div>
+
+    <div class="cuerpo">
+
+        <h2>Bootstrap 3 Iconos</h2>
+
+        <p>
+            Para usar los íconos de glyphicons de Bootstrap 3, agregue la siguiente línea dentro del <code>&lt;head&gt;</code> de su página HTML:
+        </p>
+
+        <p>
+            <strong>Nota:</strong> ¡No se requiere descarga ni instalación!
+        </p>
+
+        <h3>Ejemplo</h3>
+
+        <code>
+            <div class="codigo">
+                &lt;!DOCTYPE html&gt; <br>
+                &nbsp;&lt;html&gt; <br>
+                &nbsp;&nbsp;&lt;head&gt; <br>
+                &nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"&gt; <br>
+                &nbsp;&nbsp;&lt;/head&gt; <br>
+                &nbsp;&nbsp;&lt;body&gt; <br>
+            
+                &nbsp;&nbsp;&nbsp;&lt;i class="glyphicon glyphicon-cloud"&gt;&lt;/i&gt; <br>
+                &nbsp;&nbsp;&nbsp;&lt;i class="glyphicon glyphicon-remove"&gt;&lt;/i&gt; <br>
+                &nbsp;&nbsp;&nbsp;&lt;i class="glyphicon glyphicon-user"&gt;&lt;/i&gt; <br>
+                &nbsp;&nbsp;&nbsp;&lt;i class="glyphicon glyphicon-envelope"&gt;&lt;/i&gt; <br>
+                &nbsp;&nbsp;&nbsp;&lt;i class="glyphicon glyphicon-thumbs-up"&gt;&lt;/i&gt; <br>
+            
+                &nbsp;&nbsp;&lt;/body&gt; <br>
+                &nbsp;&lt;/html&gt;
+            </div>
+        </code>
+
+    </div>
+
+    </div>
+</body>
+
+</html>

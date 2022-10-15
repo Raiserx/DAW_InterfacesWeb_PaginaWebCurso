@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./fuentes/MaterialIconsOutlined-Regular.otf); /* For IE6-8 */
+    src: url(./fuentes/MaterialIconsSharp-Regular.otf);
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+    /*  url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');*/
+  }
+  
+
+#oscura{
+    background-color: black;
+}
+
+.material-icons.color-sec {
+    color: #540D75;
+}
+
+.material-icons.color-prim-var {
+    color: #BB3434;
+}
+
+.material-icons.back-color-sec {
+    background-color: #540D75;
+    color: #BB3434;
+    font-size: 48px;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-72 { font-size: 72px; }
+
+.material-icons.md-dark { 
+    color: rgba(0, 0, 0, 0.54); 
+}
+
+.material-icons.md-dark-dos { 
+    color: rgba(0, 0, 0, 0.85); 
+}
+
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+.material-icons.md-light {
+     color: rgba(255, 255, 255, 1); 
+}
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+body{
+    background-color: #BB3434;
+    color: white;
+}
+
+p{
+    text-align: justify;
+}
+
+#header{
+    background-color: #720000;
+    margin: 35px;
+    margin-bottom: 100px;
+    padding: 5px;
+    font-size: 36pt;
+    border-style: groove;
+    border-radius: 15px;
+    border-width: 5px;
+    border-color: black;
+}
+
+#header h1{
+    text-align: center;
+    font-family: monospace;    
+}
+
+.cuerpo{
+    color: black;
+    background-color: #fffafc;
+    margin: 25px;
+    padding: 15px;
+    padding-top: 5px;
+    border-radius: 30px;
+    border-style: inset;
+    border-color: #540D75;
+}
+
+.codigo{
+    background-color: antiquewhite;
+    color: black;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.color-prim{
+    color: #720000;
+}
+
+.color-sec{
+    color: #540D75
+}
+
+.background-negro{
+    background-color: black;
+    color: white;
+}
+
+
+table.tablas-icono-codigo{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border: 2px solid #540D75;
+    width: 700px;
+}
+
+.tablas-icono-codigo td{
+    text-align: center;
+    padding: 15px;
+    
+}
+
+.iconos-muestra{
+    padding-left: 10px;
+    /*margin-top: 10px;*/
+    text-align: center;
+}
+
