@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Fuentes y Ejemplos</title>
+</head>
+<body>
+    <div id="header">
+        <h1>Fuentes CSS</h1>
+    </div>
+
+    <div class="cuerpo">
+        <h2>La selección de fuentes es importante</h2>
+
+        <p>
+            Elegir la fuente correcta tiene un gran impacto en cómo los lectores experimentan un sitio web.
+        </p>
+
+        <p>
+            La fuente correcta puede crear una fuerte identidad para su marca.
+        </p>
+
+        <p>
+            Es importante usar una fuente que sea fácil de leer. La fuente agrega valor a su texto. También es importante elegir el color y el tamaño de texto correctos para la fuente.
+        </p>
+    </div>
+
+    <div class="cuerpo">
+        <h2>Familias de fuentes genéricas</h2>
+
+        <p>
+            En CSS hay cinco familias de fuentes genéricas:
+        </p>
+
+        <ol>
+            <li><strong>Las fuentes Serif:</strong> tienen un pequeño trazo en los bordes de cada letra. Crean una sensación de formalidad y elegancia</li>
+            <li><strong>Las fuentes sans-serif:</strong> tienen líneas limpias (sin pequeños trazos adjuntos). Crean un aspecto moderno y minimalista.</li>
+            <li><strong>Fuentes monoespaciadas:</strong> aquí todas las letras tienen el mismo ancho fijo. Crean un aspecto mecánico.</li>
+            <li><strong>Las fuentes cursivas</strong> imitan la escritura humana.</li>
+            <li><strong>Las fuentes de fantasía</strong> son fuentes decorativas/divertidas.</li>
+            
+        </ol>
+
+        <p>
+            Todos los diferentes nombres de fuentes pertenecen a una de las familias de fuentes genéricas. 
+        </p>
+
+        <p>
+            <img src="./../../../imagenes/fuentestipos.PNG" alt="#"/>
+        </p>       
+    </div>
+
+    <div class="cuerpo">
+
+        <h2>La propiedad de la familia de fuentes CSS</h2>
+
+        <p>
+            En CSS, usamos la propiedad para especificar la fuente de un texto <code><span class="color-prim">font-family</span></code>
+        </p>
+
+        <p>
+            La propiedad debe contener varios nombres de fuente como un sistema de "reserva", para garantizar la máxima compatibilidad entre navegadores / sistemas operativos. Comience con la fuente que desee y termine con una familia genérica (para permitir que el navegador elija una fuente similar en la familia genérica, si no hay otras fuentes disponibles). Los nombres de las fuentes deben separarse con comas. Lea más sobre las fuentes de reserva en el siguiente capítulo <code><span class="color-prim">font-family</span></code>
+        </p>
+
+        <h3>Ejemplo:</h3>
+
+        <p>Especifique algunas fuentes diferentes para tres párrafos:</p>
+
+        <div class="codigo">
+            <code>
+                .p1 { <br>
+                    font-family: "Times New Roman", Times, serif;<br>
+                  }<br>
+                  
+                  .p2 {<br>
+                    font-family: Arial, Helvetica, sans-serif;<br>
+                  }<br>
+                  
+                  .p3 {<br>
+                    font-family: "Lucida Console", "Courier New", monospace;<br>
+                  }<br>
+            </code>
+        </div>
+    </div>
+
+    <div class="cuerpo">
+        <h2>Ejemplos de Fuentes con Lorem Ipsum</h2>
+
+        <h3>Arial</h3>
+
+        <p class="arial">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure assumenda quaerat dolore voluptatem nulla doloribus expedita recusandae aliquam maxime amet autem officia qui magni, magnam quo cupiditate architecto ipsa.
+        </p>
+
+        <h3>Verdana</h3>
+
+        <p class="verdana">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure assumenda quaerat dolore voluptatem nulla doloribus expedita recusandae aliquam maxime amet autem officia qui magni, magnam quo cupiditate architecto ipsa.
+        </p>
+
+        <h3>Tahoma</h3>
+
+        <p class="tahoma">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure assumenda quaerat dolore voluptatem nulla doloribus expedita recusandae aliquam maxime amet autem officia qui magni, magnam quo cupiditate architecto ipsa.
+        </p>
+
+        <h3>Trebuchet MS</h3>
+
+        <p class="trebuchet">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure assumenda quaerat dolore voluptatem nulla doloribus expedita recusandae aliquam maxime amet autem officia qui magni, magnam quo cupiditate architecto ipsa.
+        </p>
+
+        <h3>Times New Roman</h3>
+
+        <p class="times-new-roman">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure assumenda quaerat dolore voluptatem nulla doloribus expedita recusandae aliquam maxime amet autem officia qui magni, magnam quo cupiditate architecto ipsa.
+        </p>
+
+        <h3>Georgia</h3>
+
+        <p class="georgia">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure assumenda quaerat dolore voluptatem nulla doloribus expedita recusandae aliquam maxime amet autem officia qui magni, magnam quo cupiditate architecto ipsa.
+        </p>
+
+        <h3>Garamond</h3>
+
+        <p class="garamond">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure assumenda quaerat dolore voluptatem nulla doloribus expedita recusandae aliquam maxime amet autem officia qui magni, magnam quo cupiditate architecto ipsa.
+        </p>
+
+        <h3>Courier-New</h3>
+
+        <p class="courier">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure assumenda quaerat dolore voluptatem nulla doloribus expedita recusandae aliquam maxime amet autem officia qui magni, magnam quo cupiditate architecto ipsa.
+        </p>
+
+        <h3>Brush-Script MT</h3>
+
+        <p class="brush-script">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure assumenda quaerat dolore voluptatem nulla doloribus expedita recusandae aliquam maxime amet autem officia qui magni, magnam quo cupiditate architecto ipsa.
+        </p>
+
+        <h3>Papyrus</h3>
+
+        <p class="papyrus">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt iure assumenda quaerat dolore voluptatem nulla doloribus expedita recusandae aliquam maxime amet autem officia qui magni, magnam quo cupiditate architecto ipsa.
+        </p>
+        
+    </div>
+</body>
+</html>
