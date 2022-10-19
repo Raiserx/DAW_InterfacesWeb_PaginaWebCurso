@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Source+Serif+Pro:wght@200;300&display=swap">
+    <title>Utilizando Fuentes de Google</title>
+</head>
+<body>
+    
+    <div id="header">
+        <h1>Utilizando Fuentes de Google</h1>
+    </div>
+
+    <div class="cuerpo">
+        <h2>¿Dónde encontrarlas?</h2>
+        <p>
+            Para poder utilizar fuentes de google visitaremos su <a href="https://fonts.google.com/">página web</a>
+        </p>
+        <p>
+            Podremos filtrar por tipos las fuentes que queremos
+        </p>
+        <p>
+            Cuando seleccionemos una fuente, podremos usarla indicando el link al servidor donde está alojada en nuestro header:
+        </p>
+        <p>
+            <code>
+                <div class="codigo">
+
+                    &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt; <br>
+                    &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt; <br>
+                    &lt;link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Source+Serif+Pro:wght@200;300&display=swap" rel="stylesheet"&gt; <br>
+                </div>
+            </code>
+        </p>
+        <p>
+            Otra forma de importarlo, es poner un @import en la hoja de estilo o en el apartado &lt;style&gt; del head. 
+        </p>
+        <p>
+            <code>
+                <div class="codigo">
+                    @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Ubuntu:wght@300&display=swap');
+                </div>
+            </code>
+        </p>
+    </div>
+    <div class="cuerpo">
+        <h2>Implementándolas</h2>
+        <p>
+            Una vez importadas y referenciadas en nuestro html/css para utilizarlas necesitaremos hacerlo a través de estilos y css
+        </p>
+        <p>
+            Por ejemplo:
+        </p>
+        <p>
+            <code>
+                <div class="codigo">
+                    p{ <br>
+                        font-family: <span class="color-prim">Ubuntu</span>, sans-serif; <br>
+                        text-align: justify; <br>
+                    } <br> <br>
+                    #header h1{ <br>
+                        text-align: center; <br>
+                        font-family: '<span class="color-prim">Fuzzy Bubbles</span>', cursive; <br>  
+                    } <br>
+                </div>
+            </code>
+        </p>
+    </div>
+</body>
+</html>

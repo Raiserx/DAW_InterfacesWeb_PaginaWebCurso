@@ -1,9 +1,13 @@
+/*Esta es la otra manera de importar una fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Ubuntu:wght@300&display=swap');
+
 body{
     background-color: #BB3434;
     color: white;
 }
 
 p{
+    font-family: 'Ubuntu', sans-serif;
     text-align: justify;
 }
 
@@ -21,7 +25,7 @@ p{
 
 #header h1{
     text-align: center;
-    font-family: monospace;    
+    font-family: 'Fuzzy Bubbles', cursive;    
 }
 
 .cuerpo{
